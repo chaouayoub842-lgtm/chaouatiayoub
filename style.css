@@ -104,6 +104,10 @@ header .text {
   main .list ul li a {
     font-size: 14px;
   }
+
+  header .text h1{
+    font-size: 27px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
