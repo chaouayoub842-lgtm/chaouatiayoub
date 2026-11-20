@@ -108,6 +108,10 @@ header .text {
   header .text h1{
     font-size: 23px;
   }
+
+  header .text p{
+    font-size: 17px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
