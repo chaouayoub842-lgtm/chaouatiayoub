@@ -49,7 +49,6 @@ main .list ul li .contact {
 
 header .header-content {
   width: 85%;
-  background-color: grey;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,7 +56,8 @@ header .header-content {
 }
 
 header .header-content .contact-box {
-    
+    margin-top: 20px;
+    float: right;
 }
 
 header .text-box .text h1 {
