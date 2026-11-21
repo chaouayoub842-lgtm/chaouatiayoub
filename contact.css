@@ -167,11 +167,11 @@ footer p img {
     font-size: 14px;
   }
 
-  header .text h1 {
+  header .text-box .text h1 {
     font-size: 23px;
   }
 
-  header .paragraph p {
+  header .text-box .paragraph p{
     font-size: 10px;
   }
 }
