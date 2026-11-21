@@ -48,14 +48,14 @@ main .list ul li .contact {
 }
 
 header {
-  width: 85%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+header .text-box{
+    margin-left: -165px;
 }
 
 header .text-box .text h1 {
@@ -65,7 +65,7 @@ header .text-box .text h1 {
 }
 
 header .text-box .paragraph p{
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
 }
 
