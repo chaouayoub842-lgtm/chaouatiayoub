@@ -56,14 +56,31 @@ header .header-content {
 }
 
 header .header-content .contact-box {
-    margin-top: 50px;
-    float: right;
+    margin-top: 20px;
+}
+
+header .header-content .contact-box .email,
+header .header-content .contact-box .phone,
+header .header-content .contact-box .address{
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+header .header-content .contact-box .email .email-info span,
+header .header-content .contact-box .phone .phone-info span,
+header .header-content .contact-box .address .address-info span{
+  background-color: rgba(255, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
 }
 
 header .text-box .text h1 {
   color: red;
   font-size: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 header .text-box .paragraph p {
@@ -74,63 +91,86 @@ header .text-box .paragraph p {
 header .contact-box img {
   width: 20px;
   height: 20px;
+  margin: auto;
+}
+
+header .contact-box .email{
+  border-top: 1px solid rgb(164, 155, 155);
 }
 
 header .contact-box .email .email-info {
-  display: flex;
-  align-items: center;
-}
-
-header .contact-box .email .email-info h5 {
-  margin-left: 5px;
+  margin-left: 15px;
+  line-height: 20px;
 }
 
 header .contact-box .phone {
   margin: 15px 0;
+  border-top: 1px solid rgb(164, 155, 155);
 }
 
 header .contact-box .phone .phone-info {
-  display: flex;
-  align-items: center;
-}
-
-header .contact-box .phone .phone-info h5 {
-  margin-left: 5px;
+  margin-left: 15px;
+  line-height: 20px;
 }
 
 header .contact-box .address {
   margin-bottom: 15px;
+  border-top: 1px solid rgb(164, 155, 155);
+}
+
+header .contact-box .email .email-logo,
+header .contact-box .phone .phone-logo,
+header .contact-box .address .address-logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 header .contact-box .address .address-info {
-  display: flex;
-  align-items: center;
-}
-
-header .contact-box .address .address-info h5 {
-  margin-left: 5px;
+  margin-left: 15px;
+  line-height: 20px;
 }
 
 header .contact-box p {
   color: rgb(96, 89, 89);
-  margin-bottom: 5px;
   font-size: 14px;
+}
+
+header .contact-box .connect{
+  margin-top: 30px;
+}
+
+header .contact-box .connect p{
+  margin-bottom: 10px;
+}
+
+header .contact-box .connect .connect-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 
 header .contact-box .connect .connect-info a {
   text-decoration: none;
-  border-bottom: 3px solid black;
-  transition: all ease 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  transition: all ease 1s;
 }
 
 header .contact-box .connect .connect-info a:hover {
-  border-bottom: 3px solid red;
-  padding-bottom: 5px;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 header .contact-box .connect .connect-info a img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  margin: auto;
 }
 
 footer {
@@ -169,10 +209,11 @@ footer p img {
   }
 
   header .text-box .text h1 {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   header .text-box .paragraph p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 23px;
   }
 }

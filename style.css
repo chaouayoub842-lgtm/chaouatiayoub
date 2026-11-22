@@ -48,6 +48,7 @@ main .list ul li .home {
 }
 
 header {
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,7 +65,7 @@ header .button a {
 
 header .button a button {
   margin-top: 15px;
-  width: 150px;
+  width: 200px;
   height: 35px;
   border: 0;
   border-radius: 10px;
@@ -72,20 +73,21 @@ header .button a button {
   color: white;
   font-weight: 600;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 3%;
   transition: all ease 0.3s;
 }
 
 header .button a button:hover {
-  width: 155px;
+  width: 220px;
   height: 40px;
 }
 
 header .button a button img {
   width: 22px;
   height: 22px;
+  margin-left: 10px;
 }
 
 header .text {
@@ -105,12 +107,16 @@ header .text {
     font-size: 14px;
   }
 
+  header .text h3{
+    font-size: 22px;
+  }
+
   header .text h1{
-    font-size: 23px;
+    font-size: 32px;
   }
 
   header .paragraph p{
-    font-size: 10px;
+    font-size: 17px;
   }
 }
 
