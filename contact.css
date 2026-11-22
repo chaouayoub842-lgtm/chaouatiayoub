@@ -155,7 +155,7 @@ header .contact-box .connect .connect-info{
 
 header .contact-box .connect .connect-info a {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -164,7 +164,7 @@ header .contact-box .connect .connect-info a {
 }
 
 header .contact-box .connect .connect-info a:hover {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgb(255, 0, 0);
 }
 
 header .contact-box .connect .connect-info a img {
