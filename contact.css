@@ -67,14 +67,23 @@ header .header-content .contact-box .address{
   padding-top: 15px;
 }
 
-header .header-content .contact-box .email .email-info span,
-header .header-content .contact-box .phone .phone-info span,
-header .header-content .contact-box .address .address-info span{
-  background-color: rgba(255, 0, 0, 0.2);
+header .header-content .contact-box .email .email-logo a,
+header .header-content .contact-box .phone .phone-logo a,
+header .header-content .contact-box .address .address-logo a{
   width: 40px;
   height: 40px;
   border-radius: 50%;
   display: grid;
+  background-color: white;
+  border: 1px solid red;
+  transition: all ease 1s;
+}
+
+header .header-content .contact-box .email .email-logo a:hover,
+header .header-content .contact-box .phone .phone-logo a:hover,
+header .header-content .contact-box .address .address-logo a:hover{
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 0;
 }
 
 header .text-box .text h1 {
@@ -96,6 +105,16 @@ header .contact-box img {
 
 header .contact-box .email{
   border-top: 1px solid rgb(164, 155, 155);
+}
+
+header .contact-box .email a,
+header .contact-box .phone a,
+header .contact-box .address a{
+  display: grid;
+}
+
+header .contact-box .email a img{
+  margin: auto;
 }
 
 header .contact-box .email .email-info {
