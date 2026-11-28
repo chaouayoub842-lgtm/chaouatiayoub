@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(236, 234, 234);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 6%;
+}
+
+main .logo h1 span {
+  color: red;
+}
+
+main .list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+main .list ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all ease 0.5s;
+}
+
+main .list ul li a:hover {
+  color: red;
+  border-bottom: 3px solid red;
+  padding-bottom: 5px;
+}
+
+main .list ul li .services {
+  color: rgb(255, 1, 1);
+  font-weight: 600;
+  border-bottom: 3px solid red;
+  padding-bottom: 5px;
+}
+
+header .title h3 {
+  color: red;
+}
+
+
+footer {
+  margin: 50px 0 15px 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: rgb(96, 89, 89);
+  margin-top: -30px;
+}
+
+footer p img {
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+header .services-box{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 55%;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    height: 50px;
+  }
+
+  main .list ul {
+    width: 240px;
+  }
+
+  main .list ul li a {
+    font-size: 14px;
+  }
+
+
+  header .title{
+    margin-top: 40px;
+  }
+
+  header .title h1{
+    font-size: 50px;
+  }
+
+  header .paragraph p{
+    font-size: 20px;
+    color: rgb(44, 42, 42);
+  }
+
+  header .title,
+  header .paragraph{
+    margin-left: 6%;
+  }
+
+  header .services-box{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+  }
+
+  header .services-box .web-development,
+  header .services-box .mathematics,
+  header .services-box .turkish,
+  header .services-box .spanish,
+  header .services-box .graphic-design,
+  header .services-box .video-editing{
+    width: 88%;
+    height: 200px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: all ease 1s;
+  }
+
+  header .services-box .web-development:hover,
+  header .services-box .mathematics:hover,
+  header .services-box .turkish:hover,
+  header .services-box .spanish:hover,
+  header .services-box .graphic-design:hover,
+  header .services-box .video-editing:hover{
+    background-color: black;
+    border: 0;
+  }
+
+  header .services-box .web-development .text,
+  header .services-box .mathematics .text,
+  header .services-box .turkish .text,
+  header .services-box .spanish .text,
+  header .services-box .graphic-design .text,
+  header .services-box .video-editing .text{
+    color: white;
+  }
+
+  header .services-box .web-development .text h2,
+  header .services-box .mathematics .text h2,
+  header .services-box .turkish .text h2,
+  header .services-box .spanish .text h2,
+  header .services-box .graphic-design .text h2,
+  header .services-box .video-editing .text h2{
+    margin: 20px 0 15px 5%;
+  }
+
+  header .services-box .web-development .text .paragraph p,
+  header .services-box .mathematics .text .paragraph p,
+  header .services-box .turkish .text .paragraph p,
+  header .services-box .spanish .text .paragraph p,
+  header .services-box .graphic-design .text .paragraph p,
+  header .services-box .video-editing .text .paragraph p{
+    color: white;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  header .services-box .web-development .logo,
+  header .services-box .mathematics .logo,
+  header .services-box .turkish .logo,
+  header .services-box .spanish .logo,
+  header .services-box .graphic-design .logo,
+  header .services-box .video-editing .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    padding-top: 10px;
+  }
+
+  header .services-box .web-development .logo .picture,
+  header .services-box .mathematics .logo .picture,
+  header .services-box .turkish .logo .picture,
+  header .services-box .spanish .logo .picture,
+  header .services-box .graphic-design .logo .picture,
+  header .services-box .video-editing .logo .picture{
+    display: grid;
+    background-color: red;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  header .services-box .web-development .logo .picture img,
+  header .services-box .mathematics .logo .picture img,
+  header .services-box .turkish .logo .picture img,
+  header .services-box .spanish .logo .picture img,
+  header .services-box .graphic-design .logo .picture img,
+  header .services-box .video-editing .logo .picture img{
+    margin: auto;
+  }
+
+  header .services-box .web-development .logo h3,
+  header .services-box .mathematics .logo h3,
+  header .services-box .turkish .logo h3,
+  header .services-box .spanish .logo h3,
+  header .services-box .graphic-design .logo h3,
+  header .services-box .video-editing .logo h3{
+    color: white;
+  }
+}
